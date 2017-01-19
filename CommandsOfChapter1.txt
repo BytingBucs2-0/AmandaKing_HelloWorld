@@ -1,0 +1,260 @@
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ git config --global user.name "Amanda King"
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ git config --global user.email "aking15@bucs.fsw.edu"
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ pwd
+/f/Spring 2017/Git-Repository
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ mkdir Chapter1
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ cd Chapter1/
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1
+$ git init
+Initialized empty Git repository in F:/Spring 2017/Git-Repository/Chapter1/.git/
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ ls
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ ls -a
+./  ../  .git/
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ ls -a .git
+./  ../  HEAD  config  description  hooks/  info/  objects/  refs/
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git add index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) 2aaac38] Initial Commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ vi
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ status
+bash: status: command not found
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ commit -a -m "Add farewell line"
+bash: commit: command not found
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git commit -a -m "Add farewell line"
+[master 190932d] Add farewell line
+ 1 file changed, 1 insertion(+)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ ls -a
+./  ../  .git/  index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ git log
+commit 190932d916214a96c9d245a66007054bc7fdbd92
+Author: Amanda King <aking15@bucs.fsw.edu>
+Date:   Thu Jan 19 14:52:16 2017 -0500
+
+    Add farewell line
+
+commit 2aaac38a107e7308d3a4bc74c755247b93fbda90
+Author: Amanda King <aking15@bucs.fsw.edu>
+Date:   Thu Jan 19 14:46:48 2017 -0500
+
+    Initial Commit
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/Chapter1 (master)
+$ cd ..
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ pwd
+/f/Spring 2017/Git-Repository
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ ls
+Chapter1/
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ git clone https://github.com/BytingBucs2-0/AmandaKing_HelloWorld
+Cloning into 'AmandaKing_HelloWorld'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository
+$ cd AmandaKing_HelloWorld/
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git add index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   index.html
+
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git commit -m "Initial remote Commit"
+[master fab085b] Initial remote Commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git push origin master
+Username for 'https://github.com': aking15@bucs.fsw.edu
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 381 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/BytingBucs2-0/AmandaKing_HelloWorld
+   000501b..fab085b  master -> master
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git commit -a -m "Add farewell line"
+[master bd39ff9] Add farewell line
+ 1 file changed, 1 insertion(+)
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git push origin master
+Username for 'https://github.com': aking15@bucs.fsw.edu
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/BytingBucs2-0/AmandaKing_HelloWorld
+   fab085b..bd39ff9  master -> master
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$ git log
+commit bd39ff9e6ace7d4a6a024f4a69d282b3f9228983
+Author: Amanda King <aking15@bucs.fsw.edu>
+Date:   Thu Jan 19 15:31:09 2017 -0500
+
+    Add farewell line
+
+commit fab085b58b536d086c36b6caa9485f6c0f9225b0
+Author: Amanda King <aking15@bucs.fsw.edu>
+Date:   Thu Jan 19 15:22:09 2017 -0500
+
+    Initial remote Commit
+
+commit 000501b4fa4f3fd5c59d930a0276470eb34f7619
+Author: aking15 <aking15@bucs.fsw.edu>
+Date:   Thu Jan 19 15:07:10 2017 -0500
+
+    Update README.md
+
+commit ca2a88ff7647bb0c15addcd562534d11e31347c8
+Author: aking15 <aking15@bucs.fsw.edu>
+Date:   Thu Jan 19 15:04:48 2017 -0500
+
+    Initial commit
+
+LE-K127-ST@LE-K129-ST-F64W MINGW64 /f/Spring 2017/Git-Repository/AmandaKing_HelloWorld (master)
+$
